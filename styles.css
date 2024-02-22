@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.general-container {
+   max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+#search {
+    width: 350px;
+    height: 45px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 24px;
+    box-shadow: 2px 2px rgb(90, 88, 88);
+}
+
+#submit {
+    width: 75px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 2px 2px rgb(24, 23, 23);
+    cursor: pointer;
+
+}
+
+#submit:hover,
+#submit:focus {
+    width: 80px;
+    height: 42px;
+    background-color: rgb(37, 76, 37);
+
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    font-size: 48px;
+}
+
+.gifBlok {
+flex-basis: calc((100% - 40px) / 4);
+border: 1px solid rgb(174, 169, 169);
+height: 370px;
+padding: 5px;
+background-color: rgb(234, 228, 228);
+box-shadow: 2px 2px grey;
+position: relative;
+   overflow:hidden;
+   width:300px;
+   height:300px;
+   border-radius: 5px;
+}
+
+@media screen and (max-width: 960px) {
+  .gifBlok {
+    flex-basis: calc((100% - 30px) / 3);  
+    
+}
+}
+
+@media screen and (max-width: 750px) {
+  .gifBlok {
+    flex-basis: calc((100% - 20px) / 2);  
+    
+}
+}
+
+@media screen and (max-width: 400px) {
+  .gifBlok {
+    flex-basis: calc((100% - 10px) / 1);  
+    
+}
+}
+
+img {
+     position: absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%,-50%);
+   width:300px;
+   height:300px;
+   object-fit:cover;
+}
+
+img:hover,
+img:focus {
+    width: 150%;
+    height: 150%;
+}
+
+  
